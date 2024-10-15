@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import Account from './pages/Account';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/register" component={Register} />
       <Route exact path="/login" component={Login} />
+      <Route exact path="/account" component={Account} />
     </Switch>
     </Router>
   );

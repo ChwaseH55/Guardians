@@ -22,6 +22,9 @@ const logout = () => {
   <li className="nav-item">
     <span onClick={logout} className="nav-link">Logout</span>
   </li>
+  <li className="nav-item">
+    <Link className="nav-link" to="/account">Account</Link>
+  </li>
   </Fragment>
 ) : (
   <Fragment>
