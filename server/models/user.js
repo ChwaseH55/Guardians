@@ -25,26 +25,4 @@ const userSchema = new Schema({
     },
 });
 
-const campaignSchema = new Schema({
-    name: {
-        type: String,
-    },
-    dm_id: {
-        type: ObjectId,
-    },
-    users: {
-        type: Array,
-    },
-    campaign_id: {
-        type: Number,
-        unique: true,
-    },
-});
-
-const characterSchema = new Schema({
-    campaignId: {
-        type: Number,
-    },
-});
-
 export default mongoose.model("User", userSchema);
